@@ -13,6 +13,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { ObservableComponent } from './observable/observable.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ObservableComponent } from './observable/observable.component';
     SidebarComponent,
     MainLayoutComponent,
     ObservableComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
