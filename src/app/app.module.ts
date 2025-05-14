@@ -12,6 +12,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSelectModule } from "@angular/material/select";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
     HeaderComponent,
     SidebarComponent,
     MainLayoutComponent,
+    ObservableComponent,
   ],
   imports: [
     BrowserModule,
