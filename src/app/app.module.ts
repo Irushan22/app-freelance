@@ -12,8 +12,9 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSelectModule } from "@angular/material/select";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSidenavModule } from "@angular/material/sidenav";
-import { ObservableComponent } from './observable/observable.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ObservableComponent } from "./observable/observable.component";
+import { ContactsComponent } from "./contacts/contacts.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

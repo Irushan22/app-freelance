@@ -1,8 +1,37 @@
 <div>List of contact Ids</div>
 
 <div class="contact-wrapper">
-  <div *ngFor="let contact of contactList">
+  <!-- <div *ngFor="let contact of contactList">
     {{ contact.id }}
     {{ contact.contact }}
-  </div>
+  </div> -->
 </div>
+
+<ul>
+  <div *ngFor="let item of items">
+    <li *ngIf="item.marks > 50">{{ item.name }} - {{ item.description }}</li>
+    <!-- <button (click)="editItem(item)">Edit</button>
+    <button (click)="deleteItem(item.id)">Delete</button> -->
+  </div>
+</ul>
+
+<div *ngFor="let item of items">
+  <div>{{ item.name }}</div>
+</div>
+<br />
+
+<!-- <form (ngSubmit)="isEditMode ? updateItem() : addItem()" #itemForm="ngForm">
+  <input type="text" name="name" [(ngModel)]="selectedItem.name" placeholder="Name" required />
+  <input type="text" name="description" [(ngModel)]="selectedItem.description" placeholder="Description" required />
+  <button type="submit">{{ isEditMode ? 'Update' : 'Add' }}</button>
+  <button type="button" (click)="resetForm()" *ngIf="isEditMode">Cancel</button>
+</form> -->
+<form (ngSubmit)="addItem()" #itemForm="ngForm">
+  <input type="text" name="name" [(ngModel)]="selectedItem.name" />
+  <input
+    type="text"
+    name="description"
+    [(ngModel)]="selectedItem.description"
+  />
+  <button type="submit">Submit</button>
+</form>
